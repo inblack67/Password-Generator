@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Password | Generator</title>
+<link rel="stylesheet" href="./css/materialize.min.css">
+
+<!-- MICONS -->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+<!-- font awesome -->
+<script src="https://use.fontawesome.com/de4553fdc0.js"></script>
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+
+<style>
+body{
+background: black;
+}
+</style>
+
+</head>
+<body>
+
+<div class="container center">
+<div class="card hoverable">
+<br>
+<div class="card-title">Password Generator</div>
+<div class="card-content">
+    <div>
+        <p id="password">
+            New Password Awaits
+            <i class="fa fa-clipboard fa-2x black-text secondary-content"></i>
+        </p>
+
+        <br>
+
+        <form>
+
+        <div class="input-field">
+            <input type="number" class='secondary-content' placeholder="Password Length" required class="validate">
+            <label>Length</label>
+        </div>
+
+        <br><br><br>
+
+        <p>
+            <span class="red-text left">
+                Include Uppercase Letters
+            </span>
+                <span class="right">
+                    <label>
+                        <input type="checkbox" id="upper" />
+                        <span></span>
+                    </label>
+                </span>
+        </p>
+
+        <br><br><br>
+
+        <p>
+            <span class="red-text left">
+                Include Lowercase Letters
+            </span>
+                <span class="right">
+                    <label>
+                        <input type="checkbox" id="lower" />
+                        <span></span>
+                    </label>
+                </span>
+        </p>
+
+        <br><br><br>
+
+        <p>
+            <span class="red-text left">
+                Include Numbers
+            </span>
+                <span class="right">
+                    <label>
+                        <input type="checkbox" id="number" />
+                        <span></span>
+                    </label>
+                </span>
+        </p>
+
+        <br><br><br>
+
+        <p>
+            <span class="red-text left">
+                Include Symbols
+            </span>
+                <span class="right">
+                    <label>
+                        <input type="checkbox" id="symbol" />
+                        <span></span>
+                    </label>
+                </span>
+        </p>
+
+        <br><br><br>
+
+        <div class="input-field">
+            <input type="submit" value="Generate" class="btn black">
+        </div>
+
+    </form>
+
+    </div>
+</div>
+</div>
+</div>
+
+
+
+
+<script src="./materialize.min.js"></script>
+<script src="./app.js"></script>
+</body>
+</html>
