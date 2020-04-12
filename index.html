@@ -18,6 +18,9 @@
 body{
 background: black;
 }
+.card{
+    margin-top: 3rem;
+}
 </style>
 
 </head>
@@ -26,27 +29,34 @@ background: black;
 <div class="container center">
 <div class="card hoverable">
 <br>
-<div class="card-title">Password Generator</div>
+<div class="card-title blue-grey-text">Password Generator</div>
 <div class="card-content">
     <div>
-        <p id="password">
-            New Password Awaits
-            <i class="fa fa-clipboard fa-2x black-text secondary-content"></i>
-        </p>
+        <div>
+            <p id="password">
+                <div class="container">
 
+                </div>
+            </p>
+            <a href="#!" id="clipboard">
+                <i class="fa fa-clipboard fa-2x black-text secondary-content"></i>
+            </a>
+    
+        </div>
         <br>
 
-        <form>
+        <form id='form'>
 
         <div class="input-field">
             <input type="number" class='secondary-content' placeholder="Password Length" required class="validate">
+            <span class="helper-text" data-error=''></span>
             <label>Length</label>
         </div>
 
         <br><br><br>
 
         <p>
-            <span class="red-text left">
+            <span class="blue-text left">
                 Include Uppercase Letters
             </span>
                 <span class="right">
@@ -60,7 +70,7 @@ background: black;
         <br><br><br>
 
         <p>
-            <span class="red-text left">
+            <span class="blue-text left">
                 Include Lowercase Letters
             </span>
                 <span class="right">
@@ -74,7 +84,7 @@ background: black;
         <br><br><br>
 
         <p>
-            <span class="red-text left">
+            <span class="blue-text left">
                 Include Numbers
             </span>
                 <span class="right">
@@ -88,7 +98,7 @@ background: black;
         <br><br><br>
 
         <p>
-            <span class="red-text left">
+            <span class="blue-text left">
                 Include Symbols
             </span>
                 <span class="right">
